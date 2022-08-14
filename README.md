@@ -32,4 +32,9 @@ npm run build
 
 ### Deploying to github pages
 
-https://learnvue.co/tutorials/deploy-vue-to-github-pages
+https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane
+
+```sh
+npm run build
+git subtree push --prefix dist origin gh-pages
+```
