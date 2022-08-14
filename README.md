@@ -28,8 +28,6 @@ npm run dev
 npm run build
 ```
 
-
-
 ### Deploying to github pages
 
 https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane
