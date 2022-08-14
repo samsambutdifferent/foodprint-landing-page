@@ -36,5 +36,6 @@ https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane
 
 ```sh
 npm run build
+git push (to main)
 git subtree push --prefix dist origin gh-pages
 ```
