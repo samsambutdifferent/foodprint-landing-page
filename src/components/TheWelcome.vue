@@ -12,8 +12,8 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>About us</template>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    <template #heading>Mission</template>
+    We want to make it easier for people to eat sustainably. As 26% of GHG comes from food production, our eating habits are essential in combating climate change.
   </WelcomeItem>
 
   <WelcomeItem>
@@ -21,32 +21,34 @@ import SupportIcon from './icons/IconSupport.vue'
       <ToolingIcon />
     </template>
     <template #heading>What we do</template>
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    <span style="font-weight: bold;">Measure:</span> select a meal from our pre-populated list or enter the ingredients to a custom meal.
+    <span style="font-weight: bold;">Reduce:</span> view a breakdown of CO2e for each ingredient and browse alternatives for the highest emission items.
+    <span style="font-weight: bold;">Learn & Offset:</span> understand the equivalent impact compared to other activities and offset your emissions.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem</template>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    <template #heading>Our Approach</template>
+    Publicly available data sets. Cross referencing multiple sources. Estimation & Interpolation
   </WelcomeItem>
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <SupportIcon />
     </template>
     <template #heading>Why we do it</template>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-  </WelcomeItem>
+  </WelcomeItem> -->
 
   <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
     <template #heading>Contact</template>
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    Drop your email to stay in touch:
+    <input for="email" type="email" placeholder="Please enter your email here" required v-model="email" @blur="validateEmail" >
+    <button>submit</button>
   </WelcomeItem>
 </template>
