@@ -47,7 +47,7 @@ import SupportIcon from './icons/IconSupport.vue'
       <CommunityIcon />
     </template>
     <template #heading>Contact</template>
-    Drop your email to stay in touch:
+    Drop your email to stay in touch: <br>
     <input for="email" type="email" placeholder="Please enter your email here" required v-model="email" @blur="validateEmail" >
     <button>submit</button>
   </WelcomeItem>
